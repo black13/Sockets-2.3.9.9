@@ -1,8 +1,8 @@
-#include <Sockets/HttpGetSocket.h>
-#include <Sockets/SocketHandler.h>
-#include <Sockets/Exception.h>
-#include <Sockets/StdoutLog.h>
-#include <Sockets/File.h>
+#include "HttpGetSocket.h"
+#include "SocketHandler.h"
+#include "Exception.h"
+#include "StdoutLog.h"
+#include "File.h"
 #include <iostream>
 
 int main(int argc, char *argv[])

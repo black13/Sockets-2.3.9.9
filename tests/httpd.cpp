@@ -1,7 +1,7 @@
-#include <Sockets/HttpdSocket.h>
-#include <Sockets/SocketHandler.h>
-#include <Sockets/ListenSocket.h>
-#include <Sockets/StdoutLog.h>
+#include "HttpdSocket.h"
+#include "SocketHandler.h"
+#include "ListenSocket.h"
+#include "StdoutLog.h"
 
 #ifdef SOCKETS_NAMESPACE
 using namespace SOCKETS_NAMESPACE;

@@ -1,15 +1,15 @@
 #ifdef _WIN32
 #pragma warning(disable:4786)
 #endif
-#include <Sockets/StdoutLog.h>
-#include <Sockets/SocketHandler.h>
-#include <Sockets/TcpSocket.h>
-#include <Sockets/ListenSocket.h>
-#include <Sockets/Utility.h>
-#include <Sockets/Parse.h>
-#include <Sockets/HttpGetSocket.h>
-#include <Sockets/Socket.h>
-#include <Sockets/HttpDebugSocket.h>
+#include "StdoutLog.h"
+#include "SocketHandler.h"
+#include "TcpSocket.h"
+#include "ListenSocket.h"
+#include "Utility.h"
+#include "Parse.h"
+#include "HttpGetSocket.h"
+#include "Socket.h"
+#include "HttpDebugSocket.h"
 #include <iostream>
 
 #ifdef SOCKETS_NAMESPACE

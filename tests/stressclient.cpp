@@ -23,18 +23,18 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifdef _WIN32
 #pragma warning(disable:4786)
 #endif
-#include <Sockets/StdoutLog.h>
-#include <Sockets/ListenSocket.h>
-#include <Sockets/SocketHandlerEp.h>
-#include <Sockets/TcpSocket.h>
-#include <Sockets/Utility.h>
+#include "StdoutLog.h"
+#include "ListenSocket.h"
+#include "SocketHandlerEp.h"
+#include "TcpSocket.h"
+#include "Utility.h"
 #ifndef _WIN32
 #include <signal.h>
 #include <stdint.h>
 #else
 typedef __int64 int64_t;
 #endif
-#include <Sockets/HttpGetSocket.h>
+#include "HttpGetSocket.h"
 #include <iostream>
 
 #ifdef SOCKETS_NAMESPACE

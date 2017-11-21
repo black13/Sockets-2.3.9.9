@@ -5,7 +5,7 @@
 #  solaris9-sparc-64
 #  macosx
 #  solaris8
-PLATFORM =	linux-x86-32
+PLATFORM =	macosx
 
 # 'Makefile.version' defines the $(VERSION) of the library, and also
 # setup the OBJS variable - stuff to be compiled.
@@ -22,8 +22,8 @@ NAME =		Sockets
 #NAME =		sockets
 
 LIBNAME =	lib$(NAME).a
-SONAME =	lib$(NAME).so.$(MAJOR)
-SHAREDLIBNAME =	lib$(NAME).so.$(VERSION)
+SONAME =	lib$(NAME).dylib.$(MAJOR)
+SHAREDLIBNAME =	lib$(NAME).dylib.$(VERSION)
 
 
 CONFNAME =	$(NAME)-config
@@ -36,7 +36,7 @@ PREFIX =	/usr/local
 #PREFIX =	/usr
 
 # include paths
-INCLUDE =	-I/usr/include/libxml2
+INCLUDE =	-I/usr/include/libxml2 -I/usr/local/Cellar/openssl/1.0.2l/include
 
 # Add for libxml2 if not in above location
 #CFLAGS +=	`xml2-config --cflags`

@@ -1,7 +1,7 @@
-#include <Sockets/TcpSocket.h>
-#include <Sockets/SocketHandler.h>
-#include <Sockets/ListenSocket.h>
-#include <Sockets/Utility.h>
+#include "TcpSocket.h"
+#include "SocketHandler.h"
+#include "ListenSocket.h"
+#include "Utility.h"
 
 #ifdef SOCKETS_NAMESPACE
 using namespace SOCKETS_NAMESPACE;
@@ -9,10 +9,9 @@ using namespace SOCKETS_NAMESPACE;
 
 #define BUFSZ 7024
 
-#ifdef _WIN32
-#define MIN(a,b) (a<b?a:b)
-
-#endif
+//#ifdef _WIN32
+//#define MIN(a,b) (a<b?a:b)
+//#endif
 
 static	int quit = 0;
 static	size_t lim = 120000;
@@ -42,12 +41,12 @@ public:
 		{
 			Send("\n");
 			char buf[BUFSZ];
-			int n = MIN(m_sz, BUFSZ);
+			int n = std::min<int>(m_sz, BUFSZ);
 			while (n > 0 && GetOutputLength() < lim)
 			{
 				SendBuf(buf, n);
 				m_sz -= n;
-				n = MIN(m_sz, BUFSZ);
+				n = std::min<int>(m_sz, BUFSZ);
 			}
 			if (!n)
 			{
@@ -95,12 +94,12 @@ public:
 		if (!m_filename.size())
 		{
 			char buf[BUFSZ];
-			int n = MIN(m_sz, BUFSZ);
+			int n = std::min<int>(m_sz, BUFSZ);
 			while (n > 0 && GetOutputLength() < lim)
 			{
 				SendBuf(buf, n);
 				m_sz -= n;
-				n = MIN(m_sz, BUFSZ);
+				n = std::min<int>(m_sz, BUFSZ);
 			}
 			if (!n)
 			{

@@ -1,10 +1,10 @@
-#include <Sockets/HttpdSocket.h>
-#include <Sockets/SocketHandler.h>
-#include <Sockets/ListenSocket.h>
-#include <Sockets/StdoutLog.h>
-#include <Sockets/HttpPostSocket.h>
-#include <Sockets/HttpPutSocket.h>
-#include <Sockets/HttpdForm.h>
+#include "HttpdSocket.h"
+#include "SocketHandler.h"
+#include "ListenSocket.h"
+#include "StdoutLog.h"
+#include "HttpPostSocket.h"
+#include "HttpPutSocket.h"
+#include "HttpdForm.h"
 
 #ifdef SOCKETS_NAMESPACE
 using namespace SOCKETS_NAMESPACE;

@@ -1,6 +1,6 @@
-#include <Sockets/TcpSocket.h>
-#include <Sockets/SocketHandler.h>
-#include <Sockets/ListenSocket.h>
+#include "TcpSocket.h"
+#include "SocketHandler.h"
+#include "ListenSocket.h"
 
 #ifdef SOCKETS_NAMESPACE
 using namespace SOCKETS_NAMESPACE;

@@ -1,14 +1,11 @@
-ifeq ($(USE_CLANG),with_clang)
-        CXX =   clang++
-else
-        CXX =   g++
-endif
+CXX =   /usr/local/bin/g++-7
+
 
 CFLAGS +=	-Wall -g $(INCLUDE) -MD -D_VERSION='"$(VERSION)"'
 
 # turn off optimization if compiling with gcc 2.9.x:
 #CFLAGS +=	-O0
-CFLAGS +=	-O2
+CFLAGS +=	-O2 -g
 
 
 # uncomment depending on your operating system

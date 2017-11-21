@@ -23,14 +23,14 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifdef _WIN32
 #pragma warning(disable:4786)
 #endif
-#include <Sockets/StdoutLog.h>
-#include <Sockets/ListenSocket.h>
-#include <Sockets/SocketHandlerEp.h>
-#include <Sockets/TcpSocket.h>
+#include "StdoutLog.h"
+#include "ListenSocket.h"
+#include "SocketHandlerEp.h"
+#include "TcpSocket.h"
 #ifndef _WIN32
 #include <signal.h>
 #endif
-#include <Sockets/HttpDebugSocket.h>
+#include "HttpDebugSocket.h"
 
 
 #ifdef ENABLE_DETACH

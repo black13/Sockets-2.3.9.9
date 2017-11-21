@@ -1,10 +1,10 @@
-#include <Sockets/EventHandler.h>
-#include <Sockets/TcpSocket.h>
-#include <Sockets/IEventOwner.h>
-#include <Sockets/ListenSocket.h>
-#include <Sockets/StdoutLog.h>
+#include "EventHandler.h"
+#include "TcpSocket.h"
+#include "IEventOwner.h"
+#include "ListenSocket.h"
+#include "StdoutLog.h"
 #include <iostream>
-#include <Sockets/Debug.h>
+#include "Debug.h"
 
 
 double start;

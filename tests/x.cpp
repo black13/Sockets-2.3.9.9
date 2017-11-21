@@ -1,11 +1,11 @@
-#include <Sockets/SocketHandler.h>
-#include <Sockets/TcpSocket.h>
-#include <Sockets/StdoutLog.h>
+#include "SocketHandler.h"
+#include "TcpSocket.h"
+#include "StdoutLog.h"
 #ifndef _WIN32
 #include <signal.h>
 #endif
-#include <Sockets/IEventOwner.h>
-#include <Sockets/EventHandler.h>
+#include "IEventOwner.h"
+#include "EventHandler.h"
 
 #define HOST "localhost"
 #define PORT 2222

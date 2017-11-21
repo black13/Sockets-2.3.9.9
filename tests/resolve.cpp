@@ -5,12 +5,12 @@
 #endif
 #include <string.h>
 #include <string>
-#include <Sockets/Utility.h>
-#include <Sockets/Ipv4Address.h>
-#include <Sockets/Ipv6Address.h>
+#include "Utility.h"
+#include "Ipv4Address.h"
+#include "Ipv6Address.h"
 #include <assert.h>
-#include <Sockets/SocketHandler.h>
-#include <Sockets/StdoutLog.h>
+#include "SocketHandler.h"
+#include "StdoutLog.h"
 
 
 int main(int argc, char *argv[])

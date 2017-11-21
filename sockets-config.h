@@ -39,7 +39,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #ifndef _RUN_DP
 /* First undefine symbols if already defined. */
-#undef HAVE_OPENSSL
+//#undef HAVE_OPENSSL
 #undef ENABLE_IPV6
 #undef USE_SCTP
 #undef NO_GETADDRINFO

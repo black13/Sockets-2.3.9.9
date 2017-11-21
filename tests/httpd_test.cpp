@@ -1,8 +1,8 @@
-#include <Sockets/TcpSocket.h>
-#include <Sockets/IEventOwner.h>
-#include <Sockets/EventHandler.h>
-#include <Sockets/Utility.h>
-#include <Sockets/Exception.h>
+#include "TcpSocket.h"
+#include "IEventOwner.h"
+#include "EventHandler.h"
+#include "Utility.h"
+#include "Exception.h"
 #include <iostream>
 
 #ifdef SOCKETS_NAMESPACE

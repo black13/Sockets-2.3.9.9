@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #ifndef _WIN32
 #include <unistd.h>
-#include <Sockets/Semaphore.h>
-#include <Sockets/Mutex.h>
-#include <Sockets/Thread.h>
-#include <Sockets/Utility.h>
-#include <Sockets/Lock.h>
+#include "Semaphore.h"
+#include "Mutex.h"
+#include "Thread.h"
+#include "Utility.h"
+#include "Lock.h"
 
 
 class MyThread : public Thread
